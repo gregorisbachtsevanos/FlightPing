@@ -1,0 +1,118 @@
+import { StyleSheet } from "react-native";
+
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 24,
+    backgroundColor: "#f5f5f5",
+  },
+  activeBanner: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#4CAF50",
+    borderRadius: 12,
+    padding: 16,
+    marginTop: 40,
+    marginBottom: 24,
+  },
+  bannerPulse: {
+    fontSize: 16,
+    color: "#fff",
+    marginRight: 10,
+  },
+  bannerText: {
+    fontSize: 18,
+    fontWeight: "600",
+    color: "#fff",
+  },
+  sectionTitle: {
+    fontSize: 18,
+    fontWeight: "600",
+    color: "#333",
+    marginBottom: 12,
+    marginTop: 8,
+  },
+  contactCard: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#fff",
+    borderRadius: 12,
+    padding: 14,
+    marginBottom: 8,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.05,
+    shadowRadius: 2,
+    elevation: 2,
+  },
+  contactIcon: {
+    fontSize: 20,
+    marginRight: 12,
+  },
+  contactPhone: {
+    fontSize: 16,
+    color: "#333",
+    fontWeight: "500",
+  },
+  messageCard: {
+    backgroundColor: "#fff",
+    borderRadius: 12,
+    padding: 16,
+    marginBottom: 16,
+    borderWidth: 1,
+    borderColor: "#e0e0e0",
+  },
+  messageText: {
+    fontSize: 16,
+    color: "#333",
+    fontStyle: "italic",
+  },
+  infoCard: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    backgroundColor: "#fff",
+    borderRadius: 12,
+    padding: 14,
+    marginBottom: 24,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.05,
+    shadowRadius: 2,
+    elevation: 2,
+  },
+  infoLabel: {
+    fontSize: 15,
+    color: "#666",
+  },
+  infoValue: {
+    fontSize: 15,
+    color: "#333",
+    fontWeight: "600",
+  },
+  buttonGroup: {
+    gap: 12,
+    marginBottom: 40,
+  },
+  testButton: {
+    backgroundColor: "#2196F3",
+    borderRadius: 12,
+    paddingVertical: 16,
+    alignItems: "center",
+  },
+  testButtonText: {
+    color: "#fff",
+    fontSize: 17,
+    fontWeight: "600",
+  },
+  cancelButton: {
+    backgroundColor: "#f44336",
+    borderRadius: 12,
+    paddingVertical: 16,
+    alignItems: "center",
+  },
+  cancelButtonText: {
+    color: "#fff",
+    fontSize: 17,
+    fontWeight: "600",
+  },
+});
