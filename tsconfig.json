@@ -1,24 +1,32 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "commonjs",
-    "lib": ["es2021"],
+    "target": "ESNext",
+    "module": "CommonJS",
+    "moduleResolution": "bundler",
+
+    "lib": ["ES2021"],
     "jsx": "react-native",
+
     "strict": true,
-    "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
+
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
     },
-    "noEmit": false,
+
+    "rootDir": ".",
+
     "declaration": true,
     "emitDeclarationOnly": true,
-    "declarationDir": "./dist/types"
+    "declarationDir": "./dist/types",
+
+    "ignoreDeprecations": "6.0"
   },
+
   "include": ["src/**/*", "index.js"],
   "exclude": ["node_modules", "android", "ios", "dist"]
 }
