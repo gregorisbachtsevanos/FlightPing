@@ -1,6 +1,6 @@
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import { create } from 'zustand';
-import { persist } from 'zustand/middleware';
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import { create } from "zustand";
+import { createJSONStorage, persist } from "zustand/middleware";
 
 export type AppState = {
   contacts: string[];
@@ -74,8 +74,8 @@ export const useAppStore = create<AppState & AppActions>()(
         }),
     }),
     {
-      name: 'flightping-storage',
-      storage: AsyncStorage,
-    }
-  )
+      name: "flightping-storage",
+      storage: createJSONStorage(() => AsyncStorage),
+    },
+  ),
 );
